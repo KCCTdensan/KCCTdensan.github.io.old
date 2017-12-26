@@ -8,33 +8,31 @@
 	<meta name="generator" content="Vim">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.5.0/riot+compiler.min.js"></script>
+	<script src="riot_tag/header.tag" type="riot/tag"></script>
 	<title>Advent Calendar</title>
 </head>
 <body>
-	<h1>神戸高専電子計算機部</h1>
-	<ul id="menu">
-		<li><a href="index.html">TOP</a>
-		<li><a href="activities.html">活動</a>
-		<li><a href="works.html">展示と作品</a>
-		<li><a href="applicant.html">入部希望者の方へ</a>
-                <li><a href="https://github.com/KCCTdensan/"><img src="GitHub-Mark.svg" id="GitHub"></a>
-		<li><a href="http://www.kobe-kosen.ac.jp/">神戸高専のホームページ</a>
-		<li><a href="AdventC.html">ブログ</a>
-	</ul>
-    <ul class="content_list">
-	    <a href="https://adventar.org/calendars/2485">KCCT-Densan Advent Calendarの記事</a>で、当ページにある記事の一覧です
-        <li>
-            <h2>2017</h2>
-	    <ul>
-			<li><a href="AC2017/dec3.html">3日 ｢IME、カスタムしてますか｣</a>
-			<li><a href="AC2017/dec10.html">10日 ｢電算部部長の任期を終えて｣</a>
-			<li><a href="AC2017/dec16.html">16日「アニメとかゲームとか僕の趣味」</a>
-			<li><a href="AC2017/dec17.html">17日「キャンプに行こう」</a>
-			<li><a href="AC2017/dec20.html">20日｢Medlyを宣伝したい｣</a>
-			<li><a href="AC2017/dec22.html">22日｢コンピュータ用語 - 日中朝越での比較等｣</a>
-			<li><a href="AC2017/dec24.html">24日「VIM - Vi IMproved」</a>
-	    </ul>
-        </li>
-    </ul>
+	<header></header>
+	<script>
+		riot.mount('header',{dir:'./'});
+	</script>
+	
+	<ul class="content_list">
+		<a href="https://adventar.org/calendars/2485">KCCT-Densan Advent Calendarの記事</a>で、当ページにある記事の一覧です
+        	<li>
+            		<h2>2017</h2>
+	    		<ul>
+				<li><a href="AC2017/dec3.html">3日 ｢IME、カスタムしてますか｣</a>
+				<li><a href="AC2017/dec10.html">10日 ｢電算部部長の任期を終えて｣</a>
+				<li><a href="AC2017/dec16.html">16日「アニメとかゲームとか僕の趣味」</a>
+				<li><a href="AC2017/dec17.html">17日「キャンプに行こう」</a>
+				<li><a href="AC2017/dec20.html">20日｢Medlyを宣伝したい｣</a>
+				<li><a href="AC2017/dec22.html">22日｢コンピュータ用語 - 日中朝越での比較等｣</a>
+				<li><a href="AC2017/dec23.html">23日｢一日を変え、一生を変えるカクテルを｣</a>
+				<li><a href="AC2017/dec24.html">24日「VIM - Vi IMproved」</a>
+	    		</ul>
+        	</li>
+    	</ul>
 </body>
 </html>
