@@ -1,2 +1,5 @@
 google*.html
 /.vs
+*.html~
+*.un~
+*.swp
