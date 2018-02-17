@@ -1,17 +1,41 @@
-menu{
-	float :left;
-	width :250px;
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-.main{
-	float :left;
-	max-width: 100%;
+#layout{
+	padding: 0;
+}
+.sidebar{
+	background-color: #191818;
+}
+.menu{
+}
+.content{
+	padding: 2em 3em 0;
 }
 header{
-	max-width: 800px;
 	text-align: center;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 p{
-	max-width: 800px;
-	margin: 0 auto;
+	margin: 2em;
+}
+
+@media (min-width: 48em){
+	.content {
+		padding: 2em 3em 0;
+		margin-left: 25%;
+	}
+
+    	.sidebar {
+        	position: fixed;
+	        top: 0;
+	        bottom: 0;
+	}
+
+	.footer {
+		text-align: center;
+    	}
 }
