@@ -8,14 +8,23 @@
 	<meta name="generator" content="Vim">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.5.0/riot+compiler.min.js"></script>
+	<script src="riot_tag/menu.tag" type="riot/tag"></script>
 	<script src="riot_tag/header.tag" type="riot/tag"></script>
 	<title>入部希望者の方へ</title>
 </head>
 <body>
+	<div class="sidebar">
+		<div class="menu"></div>
+		<script>
+			riot.mount('.menu',"menu",{dir:'./'});
+		</script>
+	</div>
+	<div class="content">
 	<header></header>
 	<script>
-		riot.mount('header',{dir:'./'});
+		riot.mount('header');
 	</script>
 
 
@@ -39,7 +48,6 @@
 
 
 
-	<div>
 		<h3>見学</h3>
 		<ul>
 			<li><h4>オープンキャンパス</h4>
@@ -53,7 +61,6 @@
 				活動場所は、学生会館2Fの北側にある部室、ならびに情報センター2F第二演習室です。
 			</p>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13124.173616524915!2d135.067734!3d34.678854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b1d0fbe6103faef!2z56We5oi45biC56uL5bel5qWt6auY562J5bCC6ZaA5a2m5qCh!5e0!3m2!1sja!2sus!4v1493624998767" style="border:0;width:100%;height:75vh;" allowfullscreen></iframe>
-	</div>
 	<div>
 		<h3 id="activity_time">活動日時</h3>
 		<ul>

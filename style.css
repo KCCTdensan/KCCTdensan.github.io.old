@@ -1,15 +1,8 @@
-*{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-#layout{
-	padding: 0;
+body{
+	font-size: 150%;
 }
 .sidebar{
 	background-color: #191818;
-}
-.menu{
 }
 .content{
 	padding: 2em 3em 0;
@@ -26,7 +19,7 @@ p{
 @media (min-width: 48em){
 	.content {
 		padding: 2em 3em 0;
-		margin-left: 25%;
+		margin-left: 23%;
 	}
 
     	.sidebar {

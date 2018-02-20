@@ -6,7 +6,6 @@
 	<meta name="description" content="神戸高専電子計算機部のWebサイト">
 	<meta name="keywords" content="電子計算機部,電算部,パソコン,プログラミング,コンピューター,高専,KCCT,作曲,CG,電子回路,部活">
 	<meta name="generator" content="Vim">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
@@ -22,27 +21,25 @@
 <!--「ここはこの疑似クラスをこう使って，ここはdivで囲んだ方がいいと思う」とか考えたそこのあなた!是非入部してHTMLとCSSを書いて下さい!-->
 
 <body>
-	<div id="layout">
-		<div class="sidebar">
-			<div class="menu"></div>
-			<script>
-				riot.mount('.menu',"menu",{dir:'./'});
-			</script>
-		</div>
-		<div class="content">
-			<header></header>
-			<script>
-				riot.mount('header');
-			</script>
-		
-			<p>
-			パソコンを活用しソフトウェア，楽曲，CGなどのさまざまな作品の創作を行っています．
-			皆さんもぜひ，PCを使った創作活動をやってみませんか?兼部の方も大歓迎です!
-			</p>
-			<div id="twitter">
-				<a class="twitter-timeline"  href="https://twitter.com/kcct_densan" data-widget-id="496845194835152896">@kcct_densanさんのツイート</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</div>
+	<div class="sidebar">
+		<div class="menu"></div>
+		<script>
+			riot.mount('.menu',"menu",{dir:'./'});
+		</script>
+	</div>
+	<div class="content">
+		<header></header>
+		<script>
+			riot.mount('header');
+		</script>
+	
+		<p>
+		パソコンを活用しソフトウェア，楽曲，CGなどのさまざまな作品の創作を行っています．
+		皆さんもぜひ，PCを使った創作活動をやってみませんか?兼部の方も大歓迎です!
+		</p>
+		<div id="twitter">
+			<a class="twitter-timeline"  href="https://twitter.com/kcct_densan" data-widget-id="496845194835152896">@kcct_densanさんのツイート</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 	</div>
 </body>
