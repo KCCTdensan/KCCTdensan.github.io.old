@@ -1,4 +1,9 @@
 <menu>
+	<a id="menulink" href="#menu" onclick={ clickmenulink }>
+		<span></span>
+		<span></span>
+		<span></span>
+	</a>
 	<div class="pure-menu">
 		<a class="pure-menu-heading" href={ index }>KCCT</a>
 
@@ -23,22 +28,26 @@
 			</li>
 		</ul>
 	</div>
-
+	
 	this.index = opts.dir + "index.html"
 	this.activities = opts.dir + "activities.html"
 	this.works = opts.dir + "works.html"
 	this.applicant = opts.dir + "applicant.html"
 	this.githubmark = opts.dir + "github-mark.svg"
 	this.adventc = opts.dir + "adventc.html"
+	
+	<script>
+		clickmenulink(){
+			if(document.getElementById("menulink") != null){
+				document.getElementById("menulink").id = "menulink-active";
+				document.getElementById("sidebar").id="sidebar-active";
+				console.log("active");
+			}else{
+				document.getElementById("menulink-active").id = "menulink";
+				document.getElementById("sidebar-active").id="sidebar";
+				console.log("noactive");
+			}
+		}
+	</script>	
 
-	<style>	
-		.pure-menu-heading{
-			font-size: 125%;
-			font-weight: 300;
-			color: #fff;
-		}
-		.pure-menu-link{
-			color: #777;
-		}
-	</style>
 </menu>
