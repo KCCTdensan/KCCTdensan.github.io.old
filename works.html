@@ -15,14 +15,14 @@
 	<title>展示と作品</title>
 </head>
 <body>
-	<div id="layout">
-		<div class="sidebar">
+	<div id="layout" class="pure-g">
+		<div id="sidebar" class="pure-u">
 			<div class="menu"></div>
 			<script>
 				riot.mount('.menu',"menu",{dir:'./'});
 			</script>
 		</div>
-		<div class="content">
+		<div id="content" class="pure-u">
 			<header></header>
 			<script>
 				riot.mount('header');
