@@ -45,7 +45,7 @@
 			}else{
 				document.getElementById("menulink-active").id = "menulink";
 				document.getElementById("sidebar-active").id="sidebar";
-				console.log("noactive");
+				console.log("inactive");
 			}
 		}
 	</script>	
