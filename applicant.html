@@ -8,15 +8,25 @@
 	<meta name="generator" content="Vim">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.5.0/riot+compiler.min.js"></script>
+	<script src="riot_tag/menu.tag" type="riot/tag"></script>
 	<script src="riot_tag/header.tag" type="riot/tag"></script>
 	<title>入部希望者の方へ</title>
 </head>
 <body>
-	<header></header>
-	<script>
-		riot.mount('header',{dir:'./'});
-	</script>
+	<div id="layout" class="pure-g">
+		<div id="sidebar" class="pure-u">
+			<div class="menu"></div>
+			<script>
+				riot.mount('.menu',"menu",{dir:'./'});
+			</script>
+		</div>
+		<div id="content" class="pure-u">
+		<header></header>
+		<script>
+			riot.mount('header');
+		</script>
 
 
 
@@ -27,7 +37,7 @@
 
 
 
-	<!--divじゃなくてulにしよう-->
+		<!--divじゃなくてulにしよう-->
 
 
 
@@ -72,23 +82,23 @@
 		<dl id="faq">
 			<dt>自分のPCは
 			<dd>無くても大丈夫ですが，あるに越したことはありません．
+				<dt>パソコンは好きだけど，知識は全然ないのですが
+				<dd>問題ありません．部活には，さまざまな方面に知識を持った先輩方がいるので，質問したり，教えてもらうことで知識を身に付けることができます．
 
-			<dt>パソコンは好きだけど，知識は全然ないのですが
-			<dd>問題ありません．部活には，さまざまな方面に知識を持った先輩方がいるので，質問したり，教えてもらうことで知識を身に付けることができます．
+				<dt>プログラミングや作曲などを学ぶ際に，一定のカリキュラムのようなものがありますか?
+				<dd>いいえ．ただし，場合に応じて講習などを行っています．
 
-			<dt>プログラミングや作曲などを学ぶ際に，一定のカリキュラムのようなものがありますか?
-			<dd>いいえ．ただし，場合に応じて講習などを行っています．
-
-			<dt>兼部
-			<dd>可です．
+				<dt>兼部
+				<dd>可です．
 
 
-			<dt>一年生の時から「こんな作品を作りたい！」と自ら立案して，先輩方とチームを組んで作ったり，ということも可能ですか？
-			<dd>はい．むしろ，そのような人ほど電子計算機部に向いていると思われます．そのような行動を歓迎します．
+				<dt>一年生の時から「こんな作品を作りたい！」と自ら立案して，先輩方とチームを組んで作ったり，ということも可能ですか？
+				<dd>はい．むしろ，そのような人ほど電子計算機部に向いていると思われます．そのような行動を歓迎します．
 
-			<dt>部費
-			<dd>5000～10000円/年です．
-		</dl>
+				<dt>部費
+				<dd>5000～10000円/年です．
+			</dl>
+		</div>
 	</div>
 </body>
 </html>
