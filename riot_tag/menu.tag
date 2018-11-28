@@ -28,14 +28,14 @@
 			</li>
 		</ul>
 	</div>
-	
+
 	this.index = opts.dir + "index.html"
 	this.activities = opts.dir + "activities.html"
 	this.works = opts.dir + "works.html"
 	this.applicant = opts.dir + "applicant.html"
 	this.githubmark = opts.dir + "github-mark.svg"
-	this.adventc = opts.dir + "adventc.html"
-	
+	this.adventc = opts.dir + "AdventC.html"
+
 	<script>
 		clickmenulink(){
 			if(document.getElementById("menulink") != null){
@@ -48,6 +48,6 @@
 				console.log("inactive");
 			}
 		}
-	</script>	
+	</script>
 
 </menu>
