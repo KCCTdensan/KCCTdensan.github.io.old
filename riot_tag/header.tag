@@ -1,6 +1,6 @@
 <header>
 	<h1>神戸高専電子計算機部</h1>
-	<h2><a href={ site_moved }">&lt;-- サイト移転のお知らせ --&gt;</a></h2>
+	<h2><a href={ site_moved }>&lt;-- サイト移転のお知らせ --&gt;</a></h2>
 	<ul id="menu">
 		<li><a href={ index }>TOP</a>
 		<li><a href="https://d3bu.net">新TOP</a>
